@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Chuunibyou</title>
+</head>
+
+
+
+<body>
+
+  <div class="container">
+
+
+    <!-- Web Logo -->
+    <div class="web-logo">
+      <img src="Img/Background/web-logo.png" alt="">
+    </div>
+
+
+    
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+      <ul>
+        <li>
+          <a href="#yuta-fullpict" class="thumbs-anchor">
+            <img src="./Img/Thumbs/yuta.jpg" alt="Yuta">
+
+            <div class="thumbs-animation-name">
+              <span>Yuta</span>
+            </div>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="#rikka-fullpict" class="thumbs-anchor">
+            <img src="./Img/Thumbs/rikka.jpg" alt="Rikka">
+
+            <div class="thumbs-animation-name">
+              <span>Rikka</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+
+
+
+    <!-- Overlay for Main Content -->
+    <!-- Menggunakan class .overlay diluar parent elemen ul li, karena pada class .main-content terdapat property filter yang membuat elemen tidak bisa berkembang atau nge stuck di dalam .main-content. Maka dari itu dibuat terpisah seperti ini. -->
+    <div id="yuta-fullpict" class="overlay">
+
+      <div class="overlay-content">
+        <a href="#rikka-fullpict" class="previous-button">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <img src="./Img/Full/yuta.jpg" alt="Yuta">
+        <a href="#rikka-fullpict" class="next-button">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <p>Yuta Togashi is a teen trying to move on <br> from his previous delusions and lead a <br> normal life.</p>
+        <a href="#" class="close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+
+    </div>
+
+
+    <div id="rikka-fullpict" class="overlay">
+
+      <div class="overlay-content">
+        <a href="#yuta-fullpict" class="previous-button">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <img src="./Img/Full/rikka.jpg" alt="Rikka">
+        <a href="#yuta-fullpict" class="next-button">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <p>Rikka Takanashi is a girl who believes <br> she has supernatural powers and wears <br> an eye patch.</p>
+        <a href="#" class="close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+
+    </div>
+
+    
+  </div>
+  
+</body>
+</html>
